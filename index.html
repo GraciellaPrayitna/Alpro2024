@@ -1,0 +1,240 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>UTS ALPRO</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+
+		<!-- CodeMirror CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/theme/dracula.min.css">
+
+		<!-- CodeMirror JavaScript -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/clike/clike.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/addon/selection/active-line.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/addon/edit/matchbrackets.min.js"></script>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+		<div id="wrapper">
+
+			<!-- Intro -->
+			<section class="intro">
+				<header>
+					<h1>UTS Algoritma Pemrograman</h1>
+					<p>Stevin Yustisio - 321910010 | </p>
+					<ul class="actions">
+						<li><a href="#first" class="arrow scrolly"><span class="label">Next</span></a></li>
+					</ul>
+				</header>
+				<div class="content">
+					<span class="image fill" data-position="center"><img src="images/pic01.jpg" alt="" /></span>
+				</div>
+			</section>
+
+			<!-- Section 1 - Menghitung Faktorial -->
+			<section id="first">
+				<header>
+					<h2>Topik 1 - Menentukan Bilangan Ganjil atau Genap</h2>
+				</header>
+				<div class="content">
+					<p><strong>Deskripsi:</strong> 
+					<pre>
+1. Mulai
+2. Input Bilangan
+3. Bilangan Dibagi 2 ?
+4. Ya/Tidak
+5. Selesai
+					</pre>
+					</p>
+					<p><strong>Flowchart:</strong></p>
+					<pre>
+					<div> <img src="images/flow 1.jpg" alt="Menentukan Bilangan Ganjil atau Genap"> </div>
+					</pre>
+					<p><strong>Implementasi C++:</strong></p>
+					<pre>
+#include <iostream>
+using namespace std;
+
+int main() {
+    int bilangan;
+    cout << "Masukkan bilangan: ";
+    cin >> bilangan;
+
+    if (bilangan % 2 == 0) {
+        cout << "Bilangan " << bilangan << " adalah Genap." << endl;
+    } else {
+        cout << "Bilangan " << bilangan << " adalah Ganjil." << endl;
+    }
+
+    return 0;
+}
+
+					</pre>
+				</div>
+			</section>
+
+			<!-- Section 2 - Menghitung Rata-rata dari N Bilangan -->
+			<section>
+				<header>
+					<h2>Topik 2 - Menghitung Rata-rata dari N Bilangan</h2>
+				</header>
+				<div class="content">
+					<p><strong>Deskripsi:</strong> 
+					<pre>
+1. Mulai
+2. Input jumlah bilangan 𝑁
+3. Input bilangan
+4. Tambahkan bilangan ke total
+5. Hitung rata-rata = total / N
+6. Tampilkan rata-rata
+7. Selesai
+					</pre>
+					</p>
+					<p><strong>Flowchart:</strong></p>
+					<pre>
+					<div> <img src="images/flow 2.jpg" alt="Menghitung Rata-rata dari N Bilangan"> </div>
+					</pre>
+					<p><strong>Implementasi C++:</strong></p>
+					<pre>
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    int N;
+    float total = 0, bilangan, rataRata;
+    
+    cout &lt;&lt; "Masukkan jumlah bilangan N: ";
+    cin &gt;&gt; N;
+    
+    for (int i = 1; i &lt;= N; i++) {
+        cout &lt;&lt; "Masukkan bilangan ke-" &lt;&lt; i &lt;&lt; ": ";
+        cin &gt;&gt; bilangan;
+        total += bilangan;
+    }
+    
+    rataRata = total / N;
+    cout &lt;&lt; "Rata-rata dari " &lt;&lt; N &lt;&lt; " bilangan adalah " &lt;&lt; rataRata &lt;&lt; endl;
+    return 0;
+}
+					</pre>
+				</div>
+			</section>
+
+			<!-- Section 3 - Menghitung Luas Persegi -->
+			<section>
+				<header>
+					<h2>Topik 3 - Menghitung Luas Persegi</h2>
+				</header>
+				<div class="content">
+					<p><strong>Deskripsi:</strong> 
+					<pre>
+					Mulai
+1. Input panjang sisi (𝑠)
+2. Hitung luas = 𝑠×𝑠
+3. Tampilkan luas
+4. Selesai
+					</pre>
+					</p>
+					<p><strong>Flowchart:</strong></p>
+					<pre>
+					<div> <img src="images/flow 3.jpg" alt="Menghitung Luas Persegi"> </div>
+					</pre>
+					<p><strong>Implementasi C++:</strong></p>
+					<pre>
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    float s, luas;
+    
+    cout &lt;&lt; "Masukkan panjang sisi persegi: ";
+    cin &gt;&gt; s;
+    
+    luas = s * s;
+    cout &lt;&lt; "Luas persegi dengan sisi " &lt;&lt; s &lt;&lt; " adalah " &lt;&lt; luas &lt;&lt; endl;
+    
+    return 0;
+}
+					</pre>
+				</div>
+			</section>
+
+			
+			<section>
+				<header>
+					<h2>C++ Code Editor</h2>
+				</header>
+				<div class="content">
+					<p><strong>Coba editor kode C++ sederhana ini:</strong></p>
+					<textarea id="cppEditor">
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    cout &lt;&lt; "Hello, World!" &lt;&lt; endl;
+    return 0;
+}
+					</textarea>
+					<br>
+					<button onclick="runCode()">Run Code</button>
+					<div id="output"></div>
+				</div>
+			</section>
+
+			<!-- Copyright -->
+			<div class="copyright">&copy; Stevin Yustisio - 321910010 </div>
+
+		</div>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+		<!-- CodeMirror initialization and running the C++ code -->
+		<script>
+			
+			var editor = CodeMirror.fromTextArea(document.getElementById("cppEditor"), {
+				mode: "text/x-c++src",
+				lineNumbers: true,
+				theme: "dracula",
+				autoCloseBrackets: true,
+				matchBrackets: true,
+				highlightSelectionMatches: true,
+				styleActiveLine: true
+			});
+
+			// Function to run C++ code
+			function runCode() {
+				var code = editor.getValue(); 
+
+				
+				fetch('http://localhost:3000/run-cpp', {
+					method: 'POST',
+					headers: {
+						'Content-Type': 'application/json'
+					},
+					body: JSON.stringify({ code: code }) 
+				})
+				.then(response => response.text()) 
+				.then(output => {
+					
+					document.getElementById("output").innerHTML = `<pre>${output}</pre>`;
+				})
+				.catch(error => {
+					document.getElementById("output").innerHTML = `<pre>Error: ${error}</pre>`;
+				});
+			}
+		</script>
+
+	</body>
+</html>
